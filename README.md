@@ -20,3 +20,5 @@ A simple Chrome Extension that allows you to simply add what you need to always 
 3. The last used phrase and list are always saved automatically.
 
 4. You can clear the saved phrases if you want.
+
+![Screen Shot](screenshot.png "a simple implementation screen shot")
