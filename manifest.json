@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Custom Input",
+    "version": "1.0",
+    "description": "Adds a custom input field to the ChatGPT website",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.openai.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "extension.css"
+            ]
+        }
+    ],
+    "icons": {
+        "512": "icon.jpeg"
+    },
+    "browser_action": {
+        "default_icon": "icon.jpeg"
+    }
+}
