@@ -187,6 +187,11 @@ function initCustomInputField(textarea) {
 
             _currentTextArea.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter' && !event.shiftKey && !event.customEvent) {
+                    //if is compositon buffer is not empty, do not append custom input to textarea
+                    if (event.isComposing) {
+                        return;
+                    }
+                        
                     appendCustomInputToTextarea();
                 }
             });
